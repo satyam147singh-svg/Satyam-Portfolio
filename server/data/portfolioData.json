@@ -1,0 +1,271 @@
+{
+  "profile": {
+    "name": "Satyam Rajpoot",
+    "role": "Creative Web Developer",
+    "subRole": "Full-Stack Architect & 3D Interactive UI Crafter",
+    "tagline": "Crafting next-generation 3D interactive web experiences and robust full-stack applications with obsessive attention to design and performance.",
+    "bio": "Hello! I am Satyam Rajpoot, a passionate Web Developer with 3+ years of experience turning complex ideas into sleek, fluid digital realities. I specialize in modern JavaScript, React, Three.js, and high-performance Node.js backends. When I'm not pushing code, I'm exploring bleeding-edge web animations and user-centric architecture.",
+    "location": "India",
+    "experienceYears": "3+",
+    "completedProjects": "35+",
+    "satisfiedClients": "28+",
+    "email": "satyamrajpoot.dev@gmail.com",
+    "phone": "+91 98765 43210",
+    "status": "Available for High-Impact Roles & Freelance",
+    "socials": {
+      "github": "https://github.com/satyamrajpoot",
+      "linkedin": "https://linkedin.com/in/satyamrajpoot",
+      "twitter": "https://x.com/satyamrajpoot",
+      "instagram": "https://instagram.com/satyamrajpoot.dev"
+    }
+  },
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "AuraSphere 3D Commerce",
+      "category": "3D Websites",
+      "description": "An award-winning luxury 3D e-commerce showcase featuring interactive WebGL product customization, 60FPS fluid physics, and seamless checkout flow.",
+      "imageUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+      "tags": [
+        "React",
+        "Three.js",
+        "WebGL",
+        "CSS Modules"
+      ],
+      "liveUrl": "https://aurasphere-demo.vercel.app",
+      "githubUrl": "https://github.com/satyamrajpoot/aurasphere-3d",
+      "featured": true,
+      "metrics": "60 FPS 3D Engine • 99 Performance Score"
+    },
+    {
+      "id": "proj-2",
+      "title": "NexusAI Cloud Analytics",
+      "category": "Full Stack",
+      "description": "Enterprise-grade SaaS dashboard with real-time AI telemetry, custom workflow builders, interactive charting, and role-based access control.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+      "tags": [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Chart.js"
+      ],
+      "liveUrl": "https://nexus-ai-cloud.vercel.app",
+      "githubUrl": "https://github.com/satyamrajpoot/nexus-ai-cloud",
+      "featured": true,
+      "metrics": "Real-time WebSockets • 10k+ Events/sec"
+    },
+    {
+      "id": "proj-3",
+      "title": "VortexPay Digital Banking",
+      "category": "Web Apps",
+      "description": "Sleek dark-mode digital banking web application with instant cross-border transfers, biometric verification mockup, and virtual cards.",
+      "imageUrl": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80",
+      "tags": [
+        "React",
+        "TypeScript",
+        "REST API",
+        "Tailwind"
+      ],
+      "liveUrl": "https://vortexpay-demo.vercel.app",
+      "githubUrl": "https://github.com/satyamrajpoot/vortexpay-fintech",
+      "featured": true,
+      "metrics": "End-to-end Encryption • Sub-100ms APIs"
+    },
+    {
+      "id": "proj-4",
+      "title": "CyberFolio Obsidian",
+      "category": "3D Websites",
+      "description": "A high-concept monochrome 3D portfolio template designed for creative directors and senior software architects with spatial audio effects.",
+      "imageUrl": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=80",
+      "tags": [
+        "Three.js",
+        "React",
+        "GSAP Scroll",
+        "Audio API"
+      ],
+      "liveUrl": "https://cyberfolio-obsidian.vercel.app",
+      "githubUrl": "https://github.com/satyamrajpoot/cyberfolio-obsidian",
+      "featured": false,
+      "metrics": "Cinematic Shaders • Adaptive Dark Theme"
+    },
+    {
+      "id": "proj-5",
+      "title": "Krypton DAO Protocol",
+      "category": "Web Apps",
+      "description": "Decentralized autonomous organization portal featuring proposal voting, treasury telemetry, liquidity pool tracking, and modern glassmorphism.",
+      "imageUrl": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1200&q=80",
+      "tags": [
+        "React",
+        "Ethers.js",
+        "Web3 UI",
+        "Node.js"
+      ],
+      "liveUrl": "https://krypton-dao.vercel.app",
+      "githubUrl": "https://github.com/satyamrajpoot/krypton-dao-ui",
+      "featured": false,
+      "metrics": "Smart Contract Verified • Zero Gas Estimates"
+    },
+    {
+      "id": "proj-6",
+      "title": "PulseSync Team Workspaces",
+      "category": "Full Stack",
+      "description": "Collaborative project planner with real-time kanban boards, live multi-cursor presence, instant chat channels, and automated sprint reports.",
+      "imageUrl": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80",
+      "tags": [
+        "React",
+        "Node.js",
+        "Socket.io",
+        "Express",
+        "SQLite"
+      ],
+      "liveUrl": "https://pulsesync-work.vercel.app",
+      "githubUrl": "https://github.com/satyamrajpoot/pulsesync-app",
+      "featured": true,
+      "metrics": "Live Multiplayer • Offline Sync"
+    }
+  ],
+  "skills": [
+    {
+      "id": "sk-1",
+      "name": "React.js & Next.js",
+      "category": "Frontend",
+      "level": 95,
+      "icon": "Code2"
+    },
+    {
+      "id": "sk-2",
+      "name": "JavaScript (ES6+) & TS",
+      "category": "Frontend",
+      "level": 94,
+      "icon": "FileCode"
+    },
+    {
+      "id": "sk-3",
+      "name": "Three.js & 3D WebGL",
+      "category": "Creative & 3D",
+      "level": 88,
+      "icon": "Layers"
+    },
+    {
+      "id": "sk-4",
+      "name": "Node.js & Express",
+      "category": "Backend",
+      "level": 92,
+      "icon": "Server"
+    },
+    {
+      "id": "sk-5",
+      "name": "RESTful APIs & Microservices",
+      "category": "Backend",
+      "level": 93,
+      "icon": "Cpu"
+    },
+    {
+      "id": "sk-6",
+      "name": "HTML5 & Modern CSS3",
+      "category": "Frontend",
+      "level": 98,
+      "icon": "Palette"
+    },
+    {
+      "id": "sk-7",
+      "name": "MongoDB & PostgreSQL",
+      "category": "Database",
+      "level": 87,
+      "icon": "Database"
+    },
+    {
+      "id": "sk-8",
+      "name": "UI/UX & Glassmorphism Design",
+      "category": "Creative & 3D",
+      "level": 90,
+      "icon": "Sparkles"
+    },
+    {
+      "id": "sk-9",
+      "name": "Git, GitHub & CI/CD",
+      "category": "Tools",
+      "level": 92,
+      "icon": "GitBranch"
+    },
+    {
+      "id": "sk-10",
+      "name": "Vite & Performance Tuning",
+      "category": "Tools",
+      "level": 95,
+      "icon": "Zap"
+    }
+  ],
+  "services": [
+    {
+      "id": "srv-1",
+      "title": "Custom Web Applications",
+      "description": "Architecting modern, lightning-fast Single Page Applications (SPAs) and Progressive Web Apps built with React, modular components, and bulletproof architecture.",
+      "icon": "Monitor",
+      "tags": [
+        "React",
+        "State Management",
+        "SPA",
+        "Clean Code"
+      ]
+    },
+    {
+      "id": "srv-2",
+      "title": "3D & Interactive Web Experiences",
+      "description": "Crafting unforgettable immersive 3D websites, particle systems, interactive avatars, and scroll-triggered spatial storytelling using Three.js and WebGL.",
+      "icon": "Box",
+      "tags": [
+        "Three.js",
+        "WebGL",
+        "Scroll Animations",
+        "Shaders"
+      ]
+    },
+    {
+      "id": "srv-3",
+      "title": "Full-Stack Backend & REST APIs",
+      "description": "Developing robust Node.js/Express backend architectures, authentication systems, reliable REST APIs, database schemas, and seamless third-party integrations.",
+      "icon": "Server",
+      "tags": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Security",
+        "APIs"
+      ]
+    },
+    {
+      "id": "srv-4",
+      "title": "Performance & Aesthetic Redesign",
+      "description": "Transforming legacy or plain websites into high-converting, luxury monochrome digital experiences with 90+ Lighthouse speed scores and silky animations.",
+      "icon": "Sparkles",
+      "tags": [
+        "UI/UX Redesign",
+        "Lighthouse 95+",
+        "SEO",
+        "Micro-interactions"
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1793352797439",
+      "name": "Alex Vance",
+      "email": "alex@vance.io",
+      "subject": "3D Project",
+      "message": "Great work!",
+      "date": "2026-10-30 09:33:17",
+      "read": false
+    },
+    {
+      "id": "msg-init-1",
+      "name": "Sarah Jenkins",
+      "email": "sarah@lumina-studio.co",
+      "subject": "3D Web App Project Opportunity",
+      "message": "Hi Satyam, we were blown away by your 3D scroll portfolio! We would love to collaborate with you on our upcoming brand redesign project.",
+      "date": "2026-10-28 14:22:00",
+      "read": false
+    }
+  ]
+}
