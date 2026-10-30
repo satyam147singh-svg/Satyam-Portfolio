@@ -105,60 +105,67 @@ html, body, #root {
   flex: 1;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 48px 90px 48px;
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  .stage-container {
-    padding: 70px 20px 85px 20px;
-  }
-}
-
-/* Section Slide Layer with 3D Fade-in / Fade-out */
+/* Section Slide Layer with smooth natural scroll */
 .section-slide {
   position: absolute;
   inset: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: inherit;
+  justify-content: flex-start;
+  padding: 85px 36px 110px 36px;
+  overflow-y: auto;
+  overflow-x: hidden;
   opacity: 0;
   pointer-events: none;
-  transform: scale(0.92) translateY(30px) rotateX(4deg);
-  filter: blur(8px);
+  transform: translateY(24px) scale(0.97);
   transition: 
-    opacity 0.65s var(--ease-out-expo),
-    transform 0.75s var(--ease-out-expo),
-    filter 0.65s var(--ease-out-expo);
-  will-change: transform, opacity, filter;
+    opacity 0.5s var(--ease-out-expo),
+    transform 0.55s var(--ease-out-expo);
+  will-change: transform, opacity;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .section-slide {
+    padding: 75px 16px 100px 16px;
+  }
 }
 
 .section-slide.active {
   opacity: 1;
   pointer-events: auto;
-  transform: scale(1) translateY(0) rotateX(0deg);
-  filter: blur(0px);
+  transform: translateY(0) scale(1);
   z-index: 10;
 }
 
 .section-slide.prev {
   opacity: 0;
   pointer-events: none;
-  transform: scale(1.05) translateY(-40px) rotateX(-5deg);
-  filter: blur(10px);
+  transform: translateY(-28px) scale(0.97);
   z-index: 5;
 }
 
 .section-slide.next {
   opacity: 0;
   pointer-events: none;
-  transform: scale(0.9) translateY(50px) rotateX(6deg);
-  filter: blur(10px);
+  transform: translateY(28px) scale(0.97);
   z-index: 5;
+}
+
+/* Section Content Inner Wrapper (auto centers vertically when short, expands when tall) */
+.section-content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Luxury Glass Cards */
@@ -313,29 +320,29 @@ html, body, #root {
   pointer-events: auto;
 }
 
-/* Speech Bubble for 3D Boy Guide */
+/* Speech Bubble for 3D Boy Guide - Compact & Sleek */
 .speech-bubble {
   position: relative;
-  background: rgba(14, 14, 18, 0.92);
-  backdrop-filter: blur(20px);
+  background: rgba(12, 12, 16, 0.94);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border-medium);
-  border-radius: 18px;
-  padding: 16px 20px;
+  border-radius: 14px;
+  padding: 12px 14px;
   box-shadow: 
-    0 15px 35px rgba(0, 0, 0, 0.7),
-    0 0 25px rgba(255, 255, 255, 0.06);
-  max-width: 320px;
-  transition: all 0.3s ease;
+    0 12px 30px rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.05);
+  max-width: 250px;
+  transition: all 0.25s ease;
 }
 
 .speech-bubble::after {
   content: '';
   position: absolute;
-  bottom: -9px;
-  right: 40px;
-  width: 16px;
-  height: 16px;
-  background: rgba(14, 14, 18, 0.92);
+  bottom: -7px;
+  right: 28px;
+  width: 13px;
+  height: 13px;
+  background: rgba(12, 12, 16, 0.94);
   border-right: 1px solid var(--border-medium);
   border-bottom: 1px solid var(--border-medium);
   transform: rotate(45deg);

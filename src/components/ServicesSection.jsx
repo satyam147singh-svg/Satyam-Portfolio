@@ -20,6 +20,7 @@ export default function ServicesSection({ services, onContact }) {
 
   return (
     <div
+      className="section-content-wrapper"
       style={{
         maxWidth: '1240px',
         width: '100%',
@@ -65,9 +66,7 @@ export default function ServicesSection({ services, onContact }) {
           gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))',
           gap: '20px',
           marginBottom: '30px',
-          maxHeight: '360px',
-          overflowY: 'auto',
-          paddingRight: '4px',
+          width: '100%',
         }}
       >
         {serviceList.map((srv) => {

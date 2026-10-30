@@ -45,6 +45,7 @@ export default function SkillsSection({ skills }) {
 
   return (
     <div
+      className="section-content-wrapper"
       style={{
         maxWidth: '1200px',
         width: '100%',
@@ -125,9 +126,7 @@ export default function SkillsSection({ skills }) {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
           gap: '16px',
-          maxHeight: '440px',
-          overflowY: 'auto',
-          paddingRight: '6px',
+          width: '100%',
         }}
       >
         {filteredSkills.map((skill) => {

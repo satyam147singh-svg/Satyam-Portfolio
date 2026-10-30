@@ -59,6 +59,7 @@ export default function ContactSection({ profile }) {
 
   return (
     <div
+      className="section-content-wrapper"
       style={{
         maxWidth: '1180px',
         width: '100%',

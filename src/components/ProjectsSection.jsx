@@ -17,6 +17,7 @@ export default function ProjectsSection({ projects, onOpenAdmin }) {
 
   return (
     <div
+      className="section-content-wrapper"
       style={{
         maxWidth: '1240px',
         width: '100%',
@@ -97,9 +98,7 @@ export default function ProjectsSection({ projects, onOpenAdmin }) {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
           gap: '22px',
-          maxHeight: '440px',
-          overflowY: 'auto',
-          paddingRight: '6px',
+          width: '100%',
         }}
       >
         {filteredProjects.map((project) => (

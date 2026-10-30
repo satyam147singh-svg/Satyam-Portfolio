@@ -1021,6 +1021,105 @@ export default function AdminDashboard({ isOpen, onClose, onDataUpdated }) {
                   </p>
 
                   <form onSubmit={handleSaveProfile} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                    {/* AVATAR PHOTO MANAGEMENT */}
+                    <div
+                      style={{
+                        background: 'rgba(255, 255, 255, 0.03)',
+                        border: '1px solid rgba(255, 255, 255, 0.1)',
+                        borderRadius: '12px',
+                        padding: '16px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '18px',
+                        flexWrap: 'wrap',
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: '64px',
+                          height: '64px',
+                          borderRadius: '50%',
+                          border: '2px solid rgba(255,255,255,0.3)',
+                          overflow: 'hidden',
+                          background: '#121217',
+                          flexShrink: 0,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                        }}
+                      >
+                        {profileForm.avatarUrl ? (
+                          <img
+                            src={profileForm.avatarUrl}
+                            alt="Avatar Preview"
+                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                          />
+                        ) : (
+                          <User size={28} color="#71717a" />
+                        )}
+                      </div>
+
+                      <div style={{ flex: 1, minWidth: '220px' }}>
+                        <label style={{ display: 'block', fontSize: '0.74rem', fontFamily: 'var(--font-mono)', color: '#a1a1aa', marginBottom: '4px' }}>
+                          DEVELOPER PHOTO / AVATAR URL
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="https://... (Direct image link)"
+                          value={profileForm.avatarUrl || ''}
+                          onChange={(e) => setProfileForm({ ...profileForm, avatarUrl: e.target.value })}
+                          style={{
+                            width: '100%',
+                            background: 'rgba(255,255,255,0.05)',
+                            border: '1px solid rgba(255,255,255,0.12)',
+                            borderRadius: '8px',
+                            padding: '8px 12px',
+                            color: '#ffffff',
+                            fontSize: '0.85rem',
+                          }}
+                        />
+                      </div>
+
+                      <div style={{ display: 'flex', gap: '8px' }}>
+                        <button
+                          type="button"
+                          onClick={() => setProfileForm({ ...profileForm, avatarUrl: '' })}
+                          style={{
+                            background: 'rgba(239, 68, 68, 0.12)',
+                            border: '1px solid rgba(239, 68, 68, 0.25)',
+                            borderRadius: '8px',
+                            padding: '8px 12px',
+                            color: '#f87171',
+                            fontSize: '0.76rem',
+                            cursor: 'pointer',
+                          }}
+                        >
+                          Delete Photo
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setProfileForm({
+                              ...profileForm,
+                              avatarUrl:
+                                'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
+                            })
+                          }
+                          style={{
+                            background: 'rgba(255, 255, 255, 0.08)',
+                            border: '1px solid rgba(255, 255, 255, 0.15)',
+                            borderRadius: '8px',
+                            padding: '8px 12px',
+                            color: '#ffffff',
+                            fontSize: '0.76rem',
+                            cursor: 'pointer',
+                          }}
+                        >
+                          Default Photo
+                        </button>
+                      </div>
+                    </div>
+
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px' }}>
                       <div>
                         <label style={{ display: 'block', fontSize: '0.74rem', fontFamily: 'var(--font-mono)', color: '#a1a1aa', marginBottom: '4px' }}>

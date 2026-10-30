@@ -6,6 +6,7 @@ export default function AboutSection({ profile }) {
 
   return (
     <div
+      className="section-content-wrapper"
       style={{
         maxWidth: '1200px',
         width: '100%',

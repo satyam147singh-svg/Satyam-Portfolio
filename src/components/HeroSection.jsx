@@ -6,6 +6,7 @@ export default function HeroSection({ profile, onExplore, onContact, onOpenAdmin
 
   return (
     <div
+      className="section-content-wrapper"
       style={{
         maxWidth: '1200px',
         width: '100%',
@@ -40,20 +41,74 @@ export default function HeroSection({ profile, onExplore, onContact, onOpenAdmin
         </div>
       </div>
 
-      {/* Main Massive Heading */}
-      <h1
+      {/* Main Massive Heading with Developer Photo */}
+      <div
         style={{
-          fontFamily: 'var(--font-display)',
-          fontSize: 'clamp(2.8rem, 6.5vw, 5.8rem)',
-          fontWeight: 900,
-          lineHeight: 1.05,
-          letterSpacing: '-0.03em',
-          textTransform: 'uppercase',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: 'clamp(14px, 3vw, 28px)',
+          flexWrap: 'wrap',
           marginBottom: '18px',
         }}
       >
-        <span className="gradient-text">{p.name || 'SATYAM RAJPOOT'}</span>
-      </h1>
+        {p.avatarUrl && (
+          <div
+            style={{
+              position: 'relative',
+              width: 'clamp(70px, 10vw, 100px)',
+              height: 'clamp(70px, 10vw, 100px)',
+              borderRadius: '50%',
+              padding: '3px',
+              background: 'linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.2) 50%, #71717a 100%)',
+              boxShadow: '0 0 30px rgba(255, 255, 255, 0.25), 0 10px 25px rgba(0,0,0,0.5)',
+              flexShrink: 0,
+            }}
+          >
+            <img
+              src={p.avatarUrl}
+              alt={p.name || 'Satyam Rajpoot'}
+              style={{
+                width: '100%',
+                height: '100%',
+                borderRadius: '50%',
+                objectFit: 'cover',
+                display: 'block',
+                background: '#121217',
+              }}
+            />
+            {/* Status Indicator */}
+            <span
+              style={{
+                position: 'absolute',
+                bottom: '4px',
+                right: '4px',
+                width: '14px',
+                height: '14px',
+                borderRadius: '50%',
+                background: '#10b981',
+                border: '2px solid #050507',
+                boxShadow: '0 0 8px #10b981',
+              }}
+              title="Satyam Rajpoot - Active Developer"
+            />
+          </div>
+        )}
+
+        <h1
+          style={{
+            fontFamily: 'var(--font-display)',
+            fontSize: 'clamp(2.5rem, 5.8vw, 5.2rem)',
+            fontWeight: 900,
+            lineHeight: 1.05,
+            letterSpacing: '-0.03em',
+            textTransform: 'uppercase',
+            margin: 0,
+          }}
+        >
+          <span className="gradient-text">{p.name || 'SATYAM RAJPOOT'}</span>
+        </h1>
+      </div>
 
       {/* Role / Subtitle */}
       <div

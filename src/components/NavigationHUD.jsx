@@ -17,6 +17,8 @@ export default function NavigationHUD({
   onNext,
   onPrev,
   onOpenAdmin,
+  isGuideEnabled,
+  onToggleGuide,
 }) {
   return (
     <>
@@ -134,8 +136,32 @@ export default function NavigationHUD({
           })}
         </nav>
 
-        {/* Admin Dashboard Trigger */}
+        {/* Action Controls: 3D Guide Toggle & Admin Dashboard */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <button
+            onClick={onToggleGuide}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              background: isGuideEnabled ? 'rgba(255, 255, 255, 0.15)' : 'rgba(255, 255, 255, 0.04)',
+              border: '1px solid',
+              borderColor: isGuideEnabled ? 'rgba(255, 255, 255, 0.35)' : 'rgba(255, 255, 255, 0.12)',
+              borderRadius: '10px',
+              padding: '8px 12px',
+              color: '#ffffff',
+              fontSize: '0.76rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              backdropFilter: 'blur(12px)',
+              transition: 'all 0.25s ease',
+            }}
+            title={isGuideEnabled ? 'Turn OFF 3D AI Guide' : 'Turn ON 3D AI Guide'}
+          >
+            <Sparkles size={14} color={isGuideEnabled ? '#ffffff' : '#71717a'} />
+            <span>3D Guide: {isGuideEnabled ? 'ON' : 'OFF'}</span>
+          </button>
+
           <button
             onClick={onOpenAdmin}
             style={{
